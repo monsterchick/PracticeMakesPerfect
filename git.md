@@ -12,7 +12,7 @@
 
 ## SETUP
 
-```python
+```shell
 # check account
 git config --global user.name
 git config --global user.email
@@ -24,7 +24,7 @@ git config --global user.email "<github_email>"
 
 ## STAGE & SNAPSHOT
 
-```python
+```shell
 # show modified files in working directory
 git status
 
@@ -46,21 +46,25 @@ git reset --hard HEAD~<number_back>
 
 ## BRANCH & MERGE
 
-```python
+```shell
 # list all branches
 git branch
+# list all branches including remotes
+git branch -a
 
 # create a new branch at the current commit
 git branch <branch_name>
 
-# switch to another branch and check it out into the working directory
+# switch to an existing branch and check it out into the working directory
 git checkout <branch_name>
+# switch to a branch (if it does not exist, create it)
+git checkout -b <branch_name>
 
 # 1. create an empty branch without commit history
 git checkout --orphan <empty_branch>
 # 2. remove all files
 git rm -rf .
-# 3. push the empty branch to remote
+# 3. push the empty branch to remote (make sure to have an initial commit)
 git push -u origin <empty_branch>
 
 # merge the specified branch’s history into the current one
@@ -69,7 +73,7 @@ git merge <alias>/<branch>
 
 ## SHARE & UPDATE
 
-```python
+```shell
 # add a git URL as an alias; <alias> is usually "origin"
 git remote add <alias> <url>
 
@@ -85,7 +89,7 @@ git pull
 
 ## TRACKING PATH CHANGES
 
-```python
+```shell
 # delete the file from project and stage the removal for commit
 git rm <file>
 
