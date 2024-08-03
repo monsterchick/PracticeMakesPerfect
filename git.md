@@ -55,6 +55,9 @@ git branch -a
 # create a new branch at the current commit
 git branch <branch_name>
 
+# delete a local branch
+git branch -d <branch_to_delete>
+
 # switch to an existing branch and check it out into the working directory
 git checkout <branch_name>
 # switch to a branch (if it does not exist, create it)
