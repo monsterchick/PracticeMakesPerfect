@@ -42,6 +42,8 @@ git reset --soft HEAD~<number_back>
 
 # back to a specific commit and reset Working Directory and Stage
 git reset --hard HEAD~<number_back>
+# back to a specific commit on remote (erase history)
+git push --force
 ```
 
 ## BRANCH & MERGE
@@ -83,7 +85,7 @@ git remote add <alias> <url>
 # fetch down all the branches from that Git remote
 get fetch <alias>/<branch>
 
-# Transmit local branch commits to the remote repository branch
+# transmit local branch commits to the remote repository branch
 git push <alias>/<branch>
 
 # fetch and merge any commits from the tracking remote branch
