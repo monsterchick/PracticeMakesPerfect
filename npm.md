@@ -9,6 +9,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 # List all installed versions of Node.js
 nvm ls
 
+# List available versions to download
+nvm ls-remote
+
 # Install a specific version of Node.js
 nvm install <Node.js_version>
 
