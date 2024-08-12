@@ -88,6 +88,10 @@ get fetch <alias>/<branch>
 # transmit local branch commits to the remote repository branch
 git push <alias>/<branch>
 
+# delete a remote branch
+# git push origin --delete <branch>
+git push origin -d <branch>
+
 # fetch and merge any commits from the tracking remote branch
 git pull
 ```
